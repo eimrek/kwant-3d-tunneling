@@ -210,15 +210,21 @@ if rank == 0:
     mode_0_all_transmission = [(np.abs(submatrices[e])**2)[0].sum() for e in range(len(e_range_global))]
 
     # plot transmission curve
-    f = plt.figure(figsize=(14, 8))
+    f = plt.figure(figsize=(8, 5))
     plt.plot(e_range_global, mode_0_all_transmission, 'o-')
+    plt.ylabel("Transmission probability")
+    plt.xlabel("Energy (eV)")
     plt.savefig(out_dir+"transmission-prob.png", dpi=300, bbox_inches='tight')
     plt.close()
 
-    f = plt.figure(figsize=(14, 8))
+    f = plt.figure(figsize=(8, 5))
     plt.plot(e_range_global, mode_0_all_transmission, 'o-')
+    plt.ylabel("Transmission probability")
+    plt.xlabel("Energy (eV)")
     plt.yscale('log')
     plt.savefig(out_dir+"transmission-prob-log.png", dpi=300, bbox_inches='tight')
     plt.close()
 
-    np.savez(out_dir+"results.npz", params=params, energies=e_range_global, transmission=transmission, submatrices=submatrices, num_prop=num_prop)
+    np.savez(out_dir+"results.npz",
+             params=params, energies=e_range_global, transmission=transmission,
+             submatrices=submatrices, num_prop=num_prop)
