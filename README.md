@@ -1,8 +1,8 @@
 ## Overview
 
-The main script `transmission_script.py` calculates electron tunneling probablities of electrons incident on am arbitrary 3d potential barrier.
-Free electron model is assumed for the incident, transmitted and reflected waves but the calculation uses a high-density tight-binding lattice to discretize the continuous Hamiltonian.
-In transverse directions, periodic boundary conditions are applied.
+The main script `transmission_script.py` calculates electron tunneling probablities of electrons incident on an arbitrary 3d potential barrier.
+Free electron model is assumed for the incident, transmitted and reflected waves and the calculation uses a high-density tight-binding lattice to discretize the continuous Hamiltonian.
+In transverse directions periodic boundary conditions are applied.
 The quantum transport python library Kwant (https://kwant-project.org/) is used, tested with version 1.3.2.
 
 The script `transmission_script.py` expects a `.npz` file containing data about the potential barrier.
