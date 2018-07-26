@@ -11,7 +11,7 @@ The Jupyter notebook `prepare_vasp_barrier.ipynb` illustrates how this file coul
 
 ## Example with Cu adatom
 
-An example calculation is included for an adatom on a copper 100 surface under 4.0 V/nm electric field.
+An example calculation is included for an adatom on a copper (111) surface under 4.0 V/nm electric field.
 The potential landscape was calculated with VASP.
 The potential barrier is prepared by `prepare_vasp_barrier.ipynb` and is shown in the following figures:
 
