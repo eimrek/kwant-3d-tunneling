@@ -139,7 +139,7 @@ if rank == 0:
     plt.close()
 
 # -----------------------------------------------------------------------------
-# Divide energy range Energy range
+# Divide energy range between the processors
 start_i = int(np.round(e_num/size*rank))
 if rank == size - 1:
     end_i = e_num
